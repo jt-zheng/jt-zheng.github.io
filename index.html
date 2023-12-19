@@ -1,24 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta name="description" content="Webpage description goes here" />
-  <meta charset="utf-8">
-  <title>Change_me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-</head>
-
-<body>
-  
-<div class="container">
-  
-</div>
-
-<script>
-</script>
-
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juntian's Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="columns">
+        <div class="column is-3" style="background-color: #eeeeee; height: 1800px;">
+            <section class="section has-text-centered">
+                <div class="center" style="margin-top: 50px; margin-bottom: 20px;">
+                    <figure class="image is-center" style="width: 180px; height: 180px;">
+                        <img class="is-rounded" src="./photo.jpg">
+                    </figure>
+                </div>
+                <h1 class="title"> Juntian Zheng </h1>
+                <p class="is-size-5"> Senior Undergraduate Student <br> at Tsinghua University </p>
+                <hr class="solid">
+                <div class="container has-text-justified is-size-5" style="margin-left: 40px;">
+                    <div>
+                        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+                        Beijing, China
+                    </div>
+                    <div>
+                        <a class="black" class="black" href="mailto:jt-zheng20@mails.tsinghua.edu.cn">
+                            <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+                            Email
+                        </a>
+                    </div>
+                    <div>
+                        <a class="black" href="https://scholar.google.com/citations?user=J4mHYkQAAAAJ">
+                            <i class="fa fa-fw fa-graduation-cap" aria-hidden="true"></i>
+                            Google Scholar
+                        </a>
+                    </div>
+                    <div>
+                        <a class="black" href="https://github.com/Alif-01/">
+                            <i class="fa fa-fw fa-github" aria-hidden="true"></i>
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-7">
+            <div class="container">
+                <section class="section" style="margin-top: 80px;">
+                    <h1 class="title is-2">About Me</h1>
+                    <p class="is-size-5">
+                        Hi there! I'm Juntian Zheng (郑钧天), a 4th-year undergraduate student majoring in Computer Science and Technology at <a href="https://iiis.tsinghua.edu.cn/">IIIS, Tsinghua University</a> (a.k.a. <a href="https://iiis.tsinghua.edu.cn/en/yaoclass/">Yao Class</a>, directed by Prof. <a href="https://iiis.tsinghua.edu.cn/yao/">Andrew Chi-Chih Yao</a>). I'm broadly interested in computer graphics, robotics, and artificial intelligence, with a particular focus on <b>differentiable physics simulation</b> and its application in <b>robot design optimization and skill acquisition</b>.
+                    </p>
+                    <p class="is-size-5 mt-4">
+                        Started from 2022, I have been an undergraduate member at the 3DVICI Lab of IIIS, advised by Prof. <a href="https://ericyi.github.io/">Li Yi</a>. During my visiting research internship at MIT (2023.03 - 2023.08), I was advised by Prof. Chuang Gan and Prof. Josh Tenenbaum, working on differentiable physics simulation and robotics.
+                    </p>
+                </section>
+                <section class="section is-size-5">
+                    <h1 class="title is-2 mb-1">Publications</h1>
+                    <p>(* indicates equal contribution)</p>
+                    <hr>
+                    <div>
+                        <video id="matting-video-1" autoplay="" muted="" loop="" width="240px" style="position: absolute;">
+                            <source src="./pub1.mp4" type="video/mp4">
+                        </video>
+                        <div style="display: position; margin-left: 280px;">
+                            <h2 class="title is-4 mb-4">Thin-Shell Object Manipulations With Differentiable Physics Simulations </h2>
+                            <p class="mb-4">Yian Wang*, <b>Juntian Zheng*</b>, Zhehuan Chen, Zhou Xian, Gu Zhang, Chao Liu, Chuang Gan</p>
+                            <p class="mb-4">Under review of ICLR 2024 <span style="color: crimson;">(Average rating 8.0/10.0, Top 1.3%)</span></p>
+                            <p>[<a href="https://thinshelllab.github.io/">Project</a>] [<a href="https://openreview.net/forum?id=KsUh8MMFKQ&">OpenReview</a>]</p>
+                        </div>
+                    </div>
+                    <hr class="mt-6">
+                    <div>
+                        <video id="matting-video-1" autoplay="" muted="" loop="" width="240px" style="position: absolute;">
+                            <source src="./pub2.mp4" type="video/mp4">
+                        </video>
+                        <div style="display: position; margin-left: 280px;">
+                            <h2 class="title is-4 mb-2">DiffuseBot: Breeding Soft Robots With Physics-Augmented Generative Diffusion Models</h2>
+                            <p class="mb-2">Tsun-Hsuan Wang, <b>Juntian Zheng</b>, Pingchuan Ma, Yilun Du, Byungchul Kim, Andrew Spielberg, Joshua Tenenbaum, Chuang Gan, Daniela Rus</p>
+                            <p class="mb-2">Accepted by NeurIPS 2023 <span style="color: crimson;">(Oral)</span></p>
+                            <p>[<a href="https://diffusebot.github.io/">Project</a>] [<a href="https://arxiv.org/abs/2311.17053">Arxiv</a>]</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <figure class="image" style="width: 240px; position: absolute; margin-top: 30px;">
+                            <img src="./pub3.png">
+                        </figure>
+                        <div style="display: position; margin-left: 280px;">
+                            <h2 class="title is-4 mb-4">CAMS: CAnonicalized Manipulation Spaces for Category-Level Functional Hand-Object Manipulation Synthesis</h2>
+                            <p class="mb-4"><b>Juntian Zheng*</b>, Lixing Fang*, Qingyuan Zheng*, Yun Liu, Li Yi</p>
+                            <p class="mb-4">Accepted by CVPR 2023</p>
+                            <p>[<a href="https://cams-hoi.github.io/">Project</a>] [<a href="https://www.youtube.com/watch?v=KEfhwICagcM">Video</a>] [<a href="https://arxiv.org/abs/2303.15469">Arxiv</a>]</p>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+            </div>
+        </div>
+    </div>
+  </body>
 </html>
